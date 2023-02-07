@@ -24,8 +24,8 @@ class Enana
             $this->situacion = 'limbo';
             return $this->situacion;
         }else {
-            $this->situacion = 'viva';
-            return $this->situacion;
+            
+            return $this->puntosVida;
         }
 
     }
