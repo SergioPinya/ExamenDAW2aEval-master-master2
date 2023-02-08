@@ -11,7 +11,7 @@ class EnanaTest extends TestCase {
         #Se tendrá que probar que la vida es mayor que 0 y además que su situación es viva
 
         $objeto = new Enana('Pepi',20,'viva');
-        $this->assertEquals(10, $objeto->heridaLeve(10));
+        $this->assertEquals(20, $objeto->heridaLeve(20));
     }
 
     /* public function testHeridaLeveMuere() {
