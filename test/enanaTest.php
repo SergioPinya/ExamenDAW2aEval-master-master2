@@ -12,7 +12,7 @@ class EnanaTest extends TestCase {
 
         $objeto = new Enana('Pepi',20,'viva');
         $this->assertEquals(10, $objeto->heridaLeve());
-        /* $this->assertEquals('viva', $objeto->heridaLeve()); */
+        $this->assertEquals('viva', $objeto->heridaLeve()); 
 
     }
 
@@ -23,7 +23,7 @@ class EnanaTest extends TestCase {
         $objeto = new Enana('Pepi',4,'viva');
         $this->assertEquals('muerta', $objeto->heridaLeve());
     }
-}
+
 /* 
     public function testHeridaGrave() {
        
