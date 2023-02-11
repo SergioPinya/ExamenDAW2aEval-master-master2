@@ -12,6 +12,8 @@ class EnanaTest extends TestCase {
 
         $objeto = new Enana('Pepi',20,'viva');
         $this->assertEquals(10, $objeto->heridaLeve());
+        $this->assertEquals('viva', $objeto->heridaLeve());
+
     }
 
      public function testHeridaLeveMuere() {
@@ -21,14 +23,15 @@ class EnanaTest extends TestCase {
         $objeto = new Enana('Pepi',4,'viva');
         $this->assertEquals('muerta', $objeto->heridaLeve());
     }
-/*
+}
+/* 
     public function testHeridaGrave() {
        
         #Se probará el efecto de una herida grave a una Enana con una situación de viva.
         #Se tendrá que probar que la vida es 0 y además que su situación es limbo
-
-    }
-    
+        $objeto = new Enana('Pepi',4,'viva');
+        $this->assertEquals('limbo', $objeto->heridaLeve());
+   
     public function testPocimaRevive() {
        
         #Se probará el efecto de administrar una pócima a una Enana muerta pero con una vida mayor que -10 y menor que 0

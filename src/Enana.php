@@ -21,6 +21,7 @@ class Enana
         return $this->situacion;
         }elseif ($this->puntosVida-10>0) {
             return $this->puntosVida-10;
+            $this->situacion = 'viva';
         }else {
             $this->situacion = 'limbo';
             return $this->situacion;
