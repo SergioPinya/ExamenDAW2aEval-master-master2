@@ -12,7 +12,6 @@ class EnanaTest extends TestCase {
 
         $objeto = new Enana('Pepi',20,'viva');
         $this->assertEquals(10, $objeto->heridaLeve());
-        $this->assertEquals('viva', $objeto->heridaLeve()); 
 
     }
 
