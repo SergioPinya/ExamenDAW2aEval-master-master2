@@ -34,5 +34,3 @@ jobs:
         run: |
           docker push ${{ secrets.DOCKER_USER }}/cochecicd:${{ github.sha }}
           docker push ${{ secrets.DOCKER_USER }}/cochecicd:latest    
-
-
