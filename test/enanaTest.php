@@ -15,15 +15,16 @@ class EnanaTest extends TestCase {
         $this->assertEquals([10, "viva"], $objeto->heridaLeve());
 
     }
-/* 
 
      public function testHeridaLeveMuere() {
        
         #Se probará el efecto de una herida leve a una Enana con puntos de vida insuficientes para sobrevivir al ataque
         #Se tendrá que probar que la vida es menor que 0 y además que su situación es muerta
-        $objeto = new Enana("pepa", 11, "viva");
-        $this->assertEquals([-1, "muerta"], $objeto->heridaLeve());
+        
+        $objeto = new Enana("Mermelada", 5, "viva");
+        $this->assertEquals([-5, "muerta"], $objeto->heridaLeve());
     }
+/* 
 
     public function testHeridaGrave() {
        
