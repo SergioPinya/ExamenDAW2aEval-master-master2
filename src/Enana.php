@@ -29,11 +29,16 @@ class Enana
         return [$this->puntosVida, $this->situacion];
     }
     
-/* 
+
     public function heridaGrave(){
         #Se le quita toda la vida que posea hasta tener 0 puntos de vida y cambiarle la situacion a limbo
-    }
+      $this->puntosVida = 0;
+       $this->situacion = "limbo";
+    
 
+        return [$this->puntosVida, $this->situacion];
+    }
+/* 
     public function pocima(){
         #Recupera 10 puntos de vida y además cambia el valor de situacion si así fuera necesario.
         #Si la Enana está en el limbo, la pocima no le afecta, seguirá en el limbo con 0 puntos de vida.
